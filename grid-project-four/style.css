@@ -1,0 +1,89 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #Ffffff;
+    color: #3F3F3F;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* card styles start */
+.card-container {
+    cursor: pointer;
+}
+
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4em;
+    padding: 2rem;
+
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border: 2px solid red;
+}
+
+/* .card-images{} */
+.card-content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.card-title {
+    font-family: "EB Garamond", serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card-desc {
+    font-size: 16PX;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.card-btn {
+    padding: 12px 15px;
+    border-radius: 10px;
+    background-color: #7549FF;
+    border: none;
+    color: #Ffffff;
+    cursor: pointer;
+    max-width: fit-content;
+    align-self: flex-end;
+}
+/* card styles end */
+
+/* media queries */
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

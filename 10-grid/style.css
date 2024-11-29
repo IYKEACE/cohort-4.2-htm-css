@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    padding: 25px;
+}
+/* Grid */
+.grid-container{
+    display: grid;
+    gap: 1rem;
+}
+.grid-container > div{
+background-color: dodgerblue;
+color: white;
+padding: 20px;
+}
+/* Grid */
+/* GTC */
+.g-t-c{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+}
+.g-t-c > div{
+background-color: rgb(101, 255, 30);
+color: white;
+padding: 20px;
+}
+/* GTC */
+/* GTR */
+.g-t-r{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 1rem;
+}
+.g-t-r> div{
+    background-color: rgb(90, 30, 255);
+color: white;
+padding: 20px;
+}
+
+/* GTR */
+/* JC */
+.j-c{
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /*justify-content: space-evenly; */
+    /* justify-content: space-between; */
+    gap: 1rem;
+    background-color: black;
+    padding: 40px;
+}
+.j-c > div{
+background-color: rgb(189, 20, 132);
+color: white;
+padding: 20px;
+}
+/* JC */
+/* AC */
+.a-c{
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+   /* align-content: start; */
+   /* align-content: end; */
+   /* align-content: center; */
+   /* align-content: space-between; */
+   /* align-content: space-around; */
+  /* align-content: space-evenly; */
+    gap: 1rem;
+    background-color: rgb(48, 3, 99);
+    padding: 40px;
+    height: 400px;
+}
+.a-c > div{
+    background-color: rgb(24, 1, 16);
+color: white;
+padding: 20px;
+}
+
+
+/* AC */
+/* at-center*/
+.at-center{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.at-center > div{
+    background-color: orange;
+    padding: 30px;
+}
+.at-center-grid{
+    margin: 30px;
+    display: grid;
+    place-items: center;
+}
+.at-center-grid > div{
+    background-color: orange;
+    padding: 30px;
+}
+/* at-center */
+
+/* children properties */
+.g-c{
+    margin: 10px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto auto;
+
+}
+.g-c > div{
+    background-color: rgb(102, 10, 70);
+    color: white;
+    padding: 20px;
+}
+.Third-child{
+   /*  grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1 /3;
+}
+.sixth-child{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1 /4;
+}
+/* Grid column */
+/* Grid row */
+.g-r{
+    margin: 10px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto auto ;
+
+}
+.g-r > div{
+    background-color: rgb(83, 10, 10);
+    color: white;
+    padding: 20px;
+}
+.First-item{
+    /*grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-row: 1 /3;
+}
+.Fourth-item{
+   /* grid-row-start: 2;
+    grid-row-end:4 ; */
+    grid-row: 2 /4;
+}
+/* Grid row */
+/* children properties */
+
+/* Grid template areas */
+.container{
+    display: grid;
+    gap: 1rem;
+    padding: 30px;
+    background-color: rgb(44, 42, 165);
+    grid-template-areas: 
+     "header header header header header header"
+     "menu main main main left left"
+     "menu footer footer footer footer footer";
+}
+.container > div{
+   background-color: orange;
+   color: white;
+   padding: 1rem;
+}
+.item-1{
+    grid-area: header;
+}
+.item-2{
+    grid-area: menu;
+}
+.item-3{
+    grid-area: main;
+}
+.item-4{
+    grid-area: left;
+}
+.item-5{
+    grid-area: footer;
+}
+
+/* Grid template areas */
+
+/* fr and repeat */
+.fr{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, auto);
+    padding: 20px;
+}
+.fr > div{
+    background-color: rgb(8, 71, 50);
+    color: aliceblue;
+    padding: 1rem;
+}
+/* fr and repeat */ 
+/* two column layout/container */
+.column-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    padding: 20px;
+}
+.left-container{
+    background-color: red;
+    color: white;
+    flex: 1;
+    padding: 20px;
+}
+.right-container{
+    background-color: dodgerblue;
+    color: white;
+    flex: 1;
+    padding: 20px;
+}
+/* two column layout/container */
